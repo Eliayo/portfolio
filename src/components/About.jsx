@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import profilePic from "../assets/profile.jpg";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -37,12 +38,12 @@ export default function About() {
             technologies. I love solving real-world problems and turning ideas
             into digital products.
           </p>
-          <a
-            href="/about"
+          <Link
+            to="/about"
             className="inline-block px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
           >
             Learn More
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

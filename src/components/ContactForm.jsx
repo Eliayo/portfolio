@@ -29,12 +29,12 @@ function ContactForm() {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="mt-8"
         >
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="px-6 py-3 rounded-xl bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 transition"
           >
             Get in Touch
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard";
 import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.jpg";
 import project3 from "../assets/project3.jpg";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -53,12 +54,12 @@ export default function ProjectList() {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <a
-            href="/projects"
+          <Link
+            to="/projects"
             className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
           >
             View All Projects
-          </a>
+          </Link>
         </div>
       </div>
     </section>

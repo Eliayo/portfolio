@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import heroIllustration from "../assets/hero-illustration.svg";
 import { FaDownload } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -26,18 +27,18 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="/projects"
+            <Link
+              to="/projects"
               className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition text-center"
             >
               View My Work
-            </a>
-            <a
-              href="/contact"
+            </Link>
+            <Link
+              to="/contact"
               className="px-6 py-3 rounded-lg border border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 transition text-center"
             >
               Contact Me
-            </a>
+            </Link>
             <a
               href="/Oluwatosin-Elijah-Aduragbemi-Resume.pdf"
               download="Oluwatosin-Elijah-Aduragbemi-Resume.pdf"

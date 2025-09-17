@@ -1,6 +1,7 @@
 // src/components/Footer.jsx
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -22,24 +23,24 @@ function Footer() {
           <h4 className="font-semibold text-white mb-3">Quick Links</h4>
           <ul className="space-y-2 text-md">
             <li>
-              <a href="/" className="hover:text-white transition">
+              <Link to="/" className="hover:text-white transition">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/projects" className="hover:text-white transition">
+              <Link to="/projects" className="hover:text-white transition">
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="hover:text-white transition">
+              <Link to="/about" className="hover:text-white transition">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-white transition">
+              <Link to="/contact" className="hover:text-white transition">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -48,36 +49,36 @@ function Footer() {
         <div className="flex flex-col md:items-end">
           <h4 className="font-semibold text-white mb-3">Connect</h4>
           <div className="flex space-x-4 text-xl">
-            <a
-              href="https://github.com/Eliayo"
+            <Link
+              to="https://github.com/Eliayo"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition"
             >
               <FaGithub />
-            </a>
-            <a
-              href="https://linkedin.com/in/elijah-ayomide-261085282"
+            </Link>
+            <Link
+              to="https://linkedin.com/in/elijah-ayomide-261085282"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition"
             >
               <FaLinkedin />
-            </a>
-            {/* <a
-              href="https://twitter.com/yourusername"
+            </Link>
+            {/* <Link 
+            to="https://twitter.com/yourusername"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition"
             >
               <FaTwitter />
-            </a> */}
-            <a
-              href="mailto:elijamide@gmail.com"
+            </Link> */}
+            <Link
+              to="mailto:elijamide@gmail.com"
               className="hover:text-white transition"
             >
               <MdEmail />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
