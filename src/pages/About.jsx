@@ -187,12 +187,12 @@ function About() {
         <p className="mt-3 text-lg text-gray-200">
           Let’s collaborate on exciting projects and build something amazing!
         </p>
-        <link
+        <Link
           to="/contact"
           className="inline-block mt-6 bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
         >
           Get in Touch
-        </link>
+        </Link>
       </section>
     </div>
   );
