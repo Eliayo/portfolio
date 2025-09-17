@@ -49,36 +49,36 @@ function Footer() {
         <div className="flex flex-col md:items-end">
           <h4 className="font-semibold text-white mb-3">Connect</h4>
           <div className="flex space-x-4 text-xl">
-            <Link
-              to="https://github.com/Eliayo"
+            <a
+              href="https://github.com/Eliayo"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition"
             >
               <FaGithub />
-            </Link>
-            <Link
-              to="https://linkedin.com/in/elijah-ayomide-261085282"
+            </a>
+            <a
+              href="https://linkedin.com/in/elijah-ayomide-261085282"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition"
             >
               <FaLinkedin />
-            </Link>
-            {/* <Link 
-            to="https://twitter.com/yourusername"
+            </a>
+            {/* <a 
+              href="https://twitter.com/yourusername"
               target="_blank"
               rel="noreferrer"
               className="hover:text-white transition"
             >
               <FaTwitter />
-            </Link> */}
-            <Link
-              to="mailto:elijamide@gmail.com"
+            </a> */}
+            <a
+              href="mailto:elijamide@gmail.com"
               className="hover:text-white transition"
             >
               <MdEmail />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
