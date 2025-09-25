@@ -14,7 +14,7 @@ const projects = [
     link: "https://github.com/Eliayo/fashion-marketplace-backend",
   },
   {
-    title: "Healthcare Dashboard",
+    title: "Maternal Health Monitoring System",
     description:
       "A maternal health monitoring system for tracking patients, appointments, and reports.",
     tech: ["React", "Django", "PostgreSQL"],
