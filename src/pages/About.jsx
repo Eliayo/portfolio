@@ -15,6 +15,23 @@ import {
 import profilePic from "../assets/profile.jpg";
 import { Link } from "react-router-dom";
 
+const [downloading, setDownloading] = useState(false);
+
+const handleDownload = () => {
+  setDownloading(true);
+
+  const link = document.createElement("a");
+  link.href = "/Oluwatosin-Elijah-Aduragbemi-Resume.pdf";
+  link.download = "Oluwatosin-Elijah-Aduragbemi-Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  setTimeout(() => {
+    setDownloading(false);
+  }, 2000);
+};
+
 function About() {
   return (
     <div className="bg-gray-50 text-gray-800">
@@ -43,13 +60,22 @@ function About() {
           </p>
         </div>
 
-        <a
-          href="/Oluwatosin-Elijah-Aduragbemi-Resume.pdf"
-          download="Oluwatosin-Elijah-Aduragbemi-Resume.pdf"
-          className="flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-md hover:from-blue-700 hover:to-purple-700 transition"
+        <button
+          onClick={handleDownload}
+          disabled={downloading}
+          className=" cursor-pointer flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-md hover:from-blue-700 hover:to-purple-700 transition text-center disabled:opacity-60"
         >
-          <FaDownload /> Resume
-        </a>
+          {downloading ? (
+            <>
+              <span className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full"></span>
+              Downloading...
+            </>
+          ) : (
+            <>
+              <FaDownload /> Resume
+            </>
+          )}
+        </button>
       </section>
 
       {/* Skills */}

@@ -41,7 +41,8 @@ export default function Navbar() {
           <li className="list-none">
             <a
               href="/Oluwatosin-Elijah-Aduragbemi-Resume.pdf"
-              download="Oluwatosin-Elijah-Aduragbemi-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-blue-600 transition bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent font-semibold"
             >
               Resume

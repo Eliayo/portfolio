@@ -57,11 +57,10 @@ export default function Hero() {
               Contact Me
             </Link>
 
-            {/* Resume Download Button */}
             <button
               onClick={handleDownload}
               disabled={downloading}
-              className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-md hover:from-blue-700 hover:to-purple-700 transition text-center disabled:opacity-60"
+              className=" cursor-pointer flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-md hover:from-blue-700 hover:to-purple-700 transition text-center disabled:opacity-60"
             >
               {downloading ? (
                 <>
