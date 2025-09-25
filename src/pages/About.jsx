@@ -111,7 +111,7 @@ function About() {
             <div>
               <span className="absolute -left-3 top-1 w-6 h-6 bg-blue-500 rounded-full"></span>
               <h3 className="font-semibold">
-                Lecturer (Web Development) – Aptech Computer Education, Ota
+                Instructor (Web Development) – Aptech Computer Education, Ota
               </h3>
               <p className="text-sm text-gray-600">Sept 2025 – Present</p>
               <p className="mt-2 text-gray-700">
