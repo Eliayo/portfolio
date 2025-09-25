@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import heroIllustration from "../assets/hero-illustration.svg";
 import { FaDownload } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = () => {
+    setDownloading(true);
+
+    const link = document.createElement("a");
+    link.href = "/Oluwatosin-Elijah-Aduragbemi-Resume.pdf";
+    link.download = "Oluwatosin-Elijah-Aduragbemi-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setTimeout(() => {
+      setDownloading(false);
+    }, 2000);
+  };
+
   return (
     <section className="bg-gray-50 py-20">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -39,15 +56,28 @@ export default function Hero() {
             >
               Contact Me
             </Link>
-            <a
-              href="/Oluwatosin-Elijah-Aduragbemi-Resume.pdf"
-              download="Oluwatosin-Elijah-Aduragbemi-Resume.pdf"
-              className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-md hover:from-blue-700 hover:to-purple-700 transition text-center"
+
+            {/* Resume Download Button */}
+            <button
+              onClick={handleDownload}
+              disabled={downloading}
+              className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-md hover:from-blue-700 hover:to-purple-700 transition text-center disabled:opacity-60"
             >
-              <FaDownload /> Resume
-            </a>
+              {downloading ? (
+                <>
+                  <span className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full"></span>
+                  Downloading...
+                </>
+              ) : (
+                <>
+                  <FaDownload /> Resume
+                </>
+              )}
+            </button>
           </div>
         </motion.div>
+
+        {/* Right: Illustration */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
