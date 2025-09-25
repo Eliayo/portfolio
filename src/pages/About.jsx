@@ -16,24 +16,23 @@ import {
 import profilePic from "../assets/profile.jpg";
 import { Link } from "react-router-dom";
 
-const [downloading, setDownloading] = useState(false);
-
-const handleDownload = () => {
-  setDownloading(true);
-
-  const link = document.createElement("a");
-  link.href = "/Oluwatosin-Elijah-Aduragbemi-Resume.pdf";
-  link.download = "Oluwatosin-Elijah-Aduragbemi-Resume.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-
-  setTimeout(() => {
-    setDownloading(false);
-  }, 2000);
-};
-
 function About() {
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = () => {
+    setDownloading(true);
+
+    const link = document.createElement("a");
+    link.href = "/Oluwatosin-Elijah-Aduragbemi-Resume.pdf";
+    link.download = "Oluwatosin-Elijah-Aduragbemi-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setTimeout(() => {
+      setDownloading(false);
+    }, 2000);
+  };
   return (
     <div className="bg-gray-50 text-gray-800">
       {/* Intro */}
