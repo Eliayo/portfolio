@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Profile Image */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
