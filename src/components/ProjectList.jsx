@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.jpg";
-import project3 from "../assets/project3.jpg";
+import project5 from "../assets/project5.jpg";
 import { Link } from "react-router-dom";
 
 const projects = [
@@ -22,12 +22,13 @@ const projects = [
     link: "https://github.com/Eliayo/maternal-health-monitoring-system",
   },
   {
-    title: "Portfolio Website",
+    title: "Faithful Life Bible Church Website",
     description:
-      "My personal portfolio showcasing projects, skills, and achievements.",
+      "A modern responsive church website showcasing sermons, events and ministries.Designed with a clean green theme that aligns with the church's brand identity",
     tech: ["React", "TailwindCSS", "Framer Motion"],
-    image: project3,
-    link: "https://github.com/Eliayo/portfolio",
+    image: project5,
+    link: "https://flbc.vercel.app/",
+    category: "Frontend",
   },
 ];
 

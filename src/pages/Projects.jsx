@@ -5,6 +5,7 @@ import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.jpg";
 import project3 from "../assets/project3.jpg";
 import project4 from "../assets/project4.jpg";
+import project5 from "../assets/project5.jpg";
 
 const allProjects = [
   {
@@ -24,6 +25,15 @@ const allProjects = [
     image: project1,
     link: "https://github.com/Eliayo/fashion-marketplace-backend",
     category: "Fullstack",
+  },
+  {
+    title: "Faithful Life Bible Church Website",
+    description:
+      "A modern responsive church website showcasing sermons, events and ministries.Designed with a clean green theme that aligns with the church's brand identity",
+    tech: ["React", "TailwindCSS", "Framer Motion"],
+    image: project5,
+    link: "https://flbc.vercel.app/",
+    category: "Frontend",
   },
   {
     title: "Portfolio Website",
