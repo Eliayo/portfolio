@@ -105,12 +105,12 @@ function Contact() {
               <MdEmail /> elijamide@gmail.com
             </a>
             <a
-              href="https://linkedin.com/in/elijah-ayomide-26108528"
+              href="https://www.linkedin.com/in/oluwatosin-elijah-261085282"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-3 hover:text-blue-600 transition"
             >
-              <FaLinkedin /> Elijah (Aduragbemi) Ayomide
+              <FaLinkedin /> Oluwatosin (Aduragbemi) Elijah
             </a>
             <a
               href="https://github.com/Eliayo"
